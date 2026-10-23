@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    /* Dégradé de 2 couleurs en arrière-plan */
+    background: linear-gradient(135deg, #5c67f5 0%, #905cf5 100%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* Le conteneur (le cadre blanc) */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 440px;
+    padding: 40px 32px;
+    border-radius: 16px;
+    border: 1px solid #e5e9f2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Le formulaire */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Lien de retour en haut */
+.top-link {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.top-link a {
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.top-link a:hover {
+    color: #5c67f5;
+}
+
+/* Titre */
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a233a;
+    margin-bottom: 10px;
+}
+
+/* Sous-titre */
+.subtitle {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 24px;
+    line-height: 1.4;
+}
+
+/* Libellé (label) */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+/* Champ de saisie */
+input[type="email"] {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    color: #2d3748;
+    background-color: #ffffff;
+    border: 1.5px solid #dce2ec;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 20px;
+}
+
+input[type="email"]::placeholder {
+    color: #8c98a9;
+}
+
+input[type="email"]:focus {
+    border-color: #5c67f5;
+    box-shadow: 0 0 0 3px rgba(92, 103, 245, 0.15);
+}
+
+/* Bouton de validation */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #5c67f5;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4b55e1;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.99);
+}
+
+/* Lien en bas de page */
+.bottom-link {
+    margin-top: 24px;
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+}
+
+.bottom-link a {
+    color: #5c67f5;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.bottom-link a:hover {
+    text-decoration: underline;
+}
