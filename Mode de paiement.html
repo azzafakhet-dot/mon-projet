@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon panier - MY BOUTIQUE</title>
+    <link rel="stylesheet" href="Mode de paiement.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index (1).html" class="logo">MY BOUTIQUE</a>
+    <a href="index (1).html" class="back-link">← Continuer mes achats</a>
+</header>
+
+<main class="container">
+    <h1 class="title">🛒 Mon panier</h1>
+
+    <div id="cart-items"></div>
+
+    <div id="cart-summary" class="cart-summary">
+        <h2>Récapitulatif de la commande</h2>
+
+        <div id="cart-items"></div>
+
+<p class="total">
+    Total : <span id="cart-total">0.00</span> TND
+</p>
+
+        <h3>Mode de paiement</h3>
+
+        <label class="payment-option">
+            <input type="radio" name="payment"
+                   value="Carte bancaire" checked>
+            Carte bancaire
+        </label>
+
+        <label class="payment-option">
+            <input type="radio" name="payment"
+                   value="Paiement à la livraison">
+            Paiement à la livraison
+        </label>
+
+        <a href="index (1).html" class="btn-submit">Valider la commande</a>
+    </div>
+
+    <div id="order-message" class="order-message"></div>
+</main>
+
+</body>
+</html>
