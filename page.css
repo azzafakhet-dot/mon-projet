@@ -6,76 +6,52 @@
 }
 
 body {
-    /* Dégradé de 2 couleurs en arrière-plan */
-    background: linear-gradient(135deg, #5c67f5 0%, #905cf5 100%);
-    
+    background-color: #f4f7fb;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 30px 20px;
+    padding: 20px;
 }
 
-/* Le conteneur (le cadre blanc) */
-.container {
+/* La boîte / le cadre principal */
+.login-card {
     background-color: #ffffff;
     width: 100%;
-    max-width: 440px;
+    max-width: 420px;
     padding: 40px 32px;
     border-radius: 16px;
     border: 1px solid #e5e9f2;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    text-align: center;
 }
 
-/* Le formulaire */
-.form {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Lien de retour en haut */
-.top-link {
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-.top-link a {
-    color: #6c757d;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
-}
-
-.top-link a:hover {
-    color: #5c67f5;
-}
-
-/* Titre */
-h1 {
-    font-size: 26px;
+.login-card h1 {
+    font-size: 28px;
     font-weight: 700;
     color: #1a233a;
     margin-bottom: 10px;
 }
 
-/* Sous-titre */
 .subtitle {
     font-size: 14px;
     color: #6c757d;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     line-height: 1.4;
 }
 
-/* Libellé (label) */
-label {
-    font-size: 14px;
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 8px;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-/* Champ de saisie */
-input[type="email"] {
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-group input {
     width: 100%;
     padding: 14px 16px;
     font-size: 15px;
@@ -85,20 +61,55 @@ input[type="email"] {
     border-radius: 10px;
     outline: none;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    margin-bottom: 20px;
 }
 
-input[type="email"]::placeholder {
+.input-group input::placeholder {
     color: #8c98a9;
 }
 
-input[type="email"]:focus {
+.input-group input:focus {
     border-color: #5c67f5;
     box-shadow: 0 0 0 3px rgba(92, 103, 245, 0.15);
 }
 
-/* Bouton de validation */
-button[type="submit"] {
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6c757d;
+    cursor: pointer;
+    user-select: none;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1.5px solid #dce2ec;
+    cursor: pointer;
+    accent-color: #5c67f5;
+}
+
+.forgot-password {
+    color: #5c67f5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.btn-submit {
     width: 100%;
     padding: 14px;
     background-color: #5c67f5;
@@ -111,29 +122,26 @@ button[type="submit"] {
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-button[type="submit"]:hover {
+.btn-submit:hover {
     background-color: #4b55e1;
 }
 
-button[type="submit"]:active {
+.btn-submit:active {
     transform: scale(0.99);
 }
 
-/* Lien en bas de page */
-.bottom-link {
-    margin-top: 24px;
+.footer-text {
+    margin-top: 28px;
     font-size: 14px;
     color: #6c757d;
-    text-align: center;
 }
 
-.bottom-link a {
+.create-account {
     color: #5c67f5;
     text-decoration: none;
     font-weight: 600;
-    margin-left: 4px;
 }
 
-.bottom-link a:hover {
+.create-account:hover {
     text-decoration: underline;
 }
